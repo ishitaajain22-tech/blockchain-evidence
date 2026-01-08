@@ -271,6 +271,16 @@ const logAdminAction = async (adminWallet, actionType, targetWallet, details) =>
 };
 
 // API Routes
+// Privacy policy route
+app.get('/privacy', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'privacy.html'));
+});
+
+// Data protection route
+app.get('/data-protection', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'data-protection.html'));
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK', timestamp: new Date().toISOString() });
