@@ -728,6 +728,7 @@ function scrollToSection(sectionId) {
     }
 }
 
+// Error Handling & Network Helpers
 /**
  * Display an error modal with a title, HTML description, and an optional action button.
  *
