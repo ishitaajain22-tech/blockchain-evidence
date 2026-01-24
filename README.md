@@ -2,7 +2,7 @@
 
 **Secure admin-controlled evidence management system with role-based access control.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
 [![Supabase](https://img.shields.io/badge/Database-Supabase-green)](https://supabase.com/)
 [![Deployment](https://img.shields.io/badge/Deploy-Render-blue)](https://render.com/)
@@ -200,10 +200,26 @@ Open your browser and navigate to:
 - **Health Check**: http://localhost:3000/api/health
 
 ### 7. Test the System
+
+#### Option 1: MetaMask Wallet Login
 1. Navigate to the login page
-2. Use MetaMask to connect with any wallet
-3. The system will create test users automatically
-4. Select a role and complete registration
+2. Click "Connect Wallet" button
+3. MetaMask extension will popup automatically
+4. Connect with any wallet address
+5. The system will create test users automatically
+6. Select a role and complete registration
+
+#### Option 2: Email Login
+Use these pre-configured test accounts:
+
+| Email | Password | Role |
+|-------|----------|------|
+| `investigator@evid-dgc.com` | `hashed_password_123` | Investigator |
+| `analyst@evid-dgc.com` | `hashed_password_456` | Forensic Analyst |
+| `legal@evid-dgc.com` | `hashed_password_789` | Legal Professional |
+| `admin@evid-dgc.com` | `admin_password` | Administrator |
+
+**Note**: These are demo credentials for testing. In production, use secure passwords and proper authentication.
 
 ### Quick Troubleshooting
 
@@ -423,7 +439,23 @@ Contributions are welcome! Please read our [Contributing.md](Contributing.md) fo
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+```
+Copyright 2025 EVID-DGC Blockchain Evidence Management System
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
 
 ---
 
