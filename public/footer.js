@@ -66,7 +66,7 @@ class FooterManager {
                     <ul>
                         <li><a href="https://github.com/Gooichand/blockchain-evidence" target="_blank">GitHub</a></li>
                         <li><a href="api-reference.html">API Documentation</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="help-center.html">Support</a></li>
                     </ul>
                 </div>
             </div>
