@@ -490,9 +490,21 @@
     <style>
         .filter-row {
             display: grid;
-            grid-template-columns: 1fr 1fr 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr;
             gap: 20px;
             align-items: end;
+        }
+
+        @media (max-width: 900px) {
+            .filter-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .filter-row {
+                grid-template-columns: 1fr;
+            }
         }
 
         .audit-log {
