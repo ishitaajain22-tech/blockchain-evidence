@@ -1,11 +1,12 @@
 const rateLimit = require('express-rate-limit');
 const { rateLimits } = require('../config');
 
-// Authentication rate limiting
+// Authentication rate limiting - Increased for development
 const authLimiter = rateLimit({
     windowMs: rateLimits.auth.windowMs,
-    max: rateLimits.auth.max,
-    message: { error: 'Too many authentication attempts, please try again later' }
+    max: 100, // Increased from default
+    message: { error: 'Too many authentication attempts, please try again later' },
+    skipSuccessfulRequests: true // Don't count successful requests
 });
 
 // General API rate limiting
